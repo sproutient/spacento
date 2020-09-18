@@ -1,0 +1,162 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.spacento-inspector-container{
+	padding: 16px;
+	background: rgba(240,240,240,1.00);
+	position: relative;
+}
+.spacento-inspector-container h3{
+	margin: 0 0 16px 0;
+	font-size: 16px;
+}
+
+.spacento-inspector-container-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	background: rgba(240,240,240,1.00);
+	z-index: 10;
+	padding: 32px 0 0 0;
+}
+.spacento-hide-overlay .spacento-inspector-container-overlay{
+	display: none;
+}
+.spacento-inspector-container-overlay p{
+	width: 100%;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+.spacento-inspector-container-overlay span{
+  	border: 6px solid #000000; /* Light grey */
+ 	border-top: 6px solid #DA4B4D; /* Blue */
+  	border-radius: 50%;
+  	width: 20px;
+ 	height: 20px;
+  	animation: spacento-inspector-spinner-icon 2s linear infinite;
+	display: inline-block;
+	margin: 8px 0 0 0;
+}
+@keyframes spacento-inspector-spinner-icon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spacento-layout-container{
+	width: 100%;
+	padding: 20px;
+	margin: 20px 0 0 0;
+	background: rgba(230,230,230,1.00);
+}
+.spacento-layout-container h4{
+	margin: 0 0 12px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+.spacento-layout-container p{
+	margin: 0 0 12px 0;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.spacento-layout-option{
+
+}
+.spacento-layout-option-selected{
+	
+}
+.spacento-layout-option-selected img{
+	border: 1px solid #DA4B4D;
+}
+
+/* styles for less than 400px */
+@media screen
+and (max-width : 399px) {
+
+
+
+}
+
+/* styles for 400px - 600px */
+@media screen
+and (min-width : 400px) 
+and (max-width : 599px) {
+	
+
+}
+
+/* styles for 600px - 900px */
+@media screen 
+and (min-width : 600px) 
+and (max-width : 900px) {
+
+
+
+}
+
+/* styles for 901px - 1200px */
+@media screen
+and (min-width : 901px) {
+	
+
+}
+
+
+
+@media screen
+and (min-width : 900px)
+and (max-width : 1200px) {
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1400px) {	
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1600px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1201px) {
+
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1401px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1601px) {
+
+
+}
+
+@media screen 
+and (min-width : 2401px) {
+
+
+}

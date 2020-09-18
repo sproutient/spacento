@@ -1,0 +1,133 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.spacento-properties-one-container{
+    width: 100%;
+    overflow: auto;
+}
+.spacento-properties-two-container{
+    width: 100%;
+    overflow: auto;
+}
+.spacento-property-container{
+    width: 100%;
+    background:rgba(240, 240, 240, 1.0);
+    padding: 4%;
+    overflow: auto;
+    float: left;
+}
+.spacento-property-media{
+    width: 100%;
+    float: left;
+}
+.spacento-property-content{
+    width: 100%;
+    float: left;
+}
+
+
+
+/* styles for less than 400px */
+@media screen
+and (max-width : 399px) {
+
+
+
+}
+
+/* styles for 400px - 600px */
+@media screen
+and (min-width : 400px) 
+and (max-width : 599px) {
+	
+
+}
+
+/* styles for 600px - 900px */
+@media screen 
+and (min-width : 600px) 
+and (max-width : 900px) {
+
+
+
+}
+
+/* styles for 901px - 1200px */
+@media screen
+and (min-width : 901px) {
+	
+
+}
+
+
+
+@media screen
+and (min-width : 900px)
+and (max-width : 1200px) {
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1400px) {	
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1600px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1201px) {
+
+    .spacento-properties-one-container .spacento-property-media{
+        width: 45%;
+    }
+    .spacento-properties-one-container .spacento-property-content{
+        width: 45%;
+        margin: 0 0 0 10%;
+    }
+
+    .spacento-properties-two-container  .spacento-property-container{
+        width: 48%;
+        margin: 0 4% 10% 0;
+    }
+    .spacento-properties-two-container .spacento-property-container:nth-child(2n){
+        margin: 0 0 10% 0;
+    }   
+    .spacento-property-two-container .spacento-property-container:nth-child(2n+1){
+        clear: both;
+        float: left;
+    }   
+
+}
+
+
+
+@media screen 
+and (min-width : 1401px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1601px) {
+
+
+}
+
+@media screen 
+and (min-width : 2401px) {
+
+
+}

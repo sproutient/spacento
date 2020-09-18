@@ -1,0 +1,380 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.spacento-property-details-container{
+	width: 100%;
+	overflow: auto;
+	padding: 10%;
+	position: relative;
+}
+.spacento-property-gallery-overlay{
+	width: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	display: none;
+	z-index: 7;
+}
+.spacento-property-gallery-overlay-inner img{
+	max-width: 100%;
+	display:inline-block;
+}
+.spacento-property-gallery-overlay .spacento-close{
+	display:inline-block;
+	font-size: 24px;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	background: rgba(42,42,42,1.00);
+	cursor: pointer;
+	z-index: 7;
+}
+.spacento-property-gallery{
+	width: 100%;
+	float: right;
+	padding: 0 0 2.0em 0;
+}
+.spacento-property-gallery-first{
+	margin: 0 0 2.0em 0;
+}
+.spacento-property-gallery-rest{
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+.spacento-property-gallery-rest-overlay{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 7;
+	min-height: 100%;
+	background: rgba(255,255,255,1.00);
+}
+.spacento-property-gallery-rest-overlay-inner img{
+	max-width: 100%;
+	display:inline-block;
+}
+.spacento-property-gallery-rest-overlay .spacento-close{
+	display:inline-block;
+	font-size: 24px;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	background: rgba(42,42,42,1.00);
+	cursor: pointer;
+}
+.spacento-property-gallery-rest-inner{
+	width: 100%;
+	overflow: auto;
+}
+.spacento-property-gallery-rest-inner .spacento-property-gallery-item{
+	width: 100%;
+	float: left;
+}
+.spacento-property-gallery-rest-inner .spacento-property-gallery-item img{
+	display: inline-block;
+	cursor: pointer;
+}
+	.spacento-property-gallery-rest-inner .spacento-property-gallery-item{
+		width: 45%;
+		margin: 0 10% 10% 0;
+	}	
+	.spacento-property-gallery-rest-inner .spacento-property-gallery-item:nth-child(2n){
+		width: 45%;
+		margin: 0 0 10% 0;
+	}
+	.spacento-property-gallery-rest-inner .spacento-property-gallery-item:nth-child(2n+1){
+		clear: both;
+		float: left;
+	}
+.spacento-property-details{
+	width: 100%;
+	float: right;
+	padding: 0 0 2.0em 0;
+	position: relative;
+}
+.spacento-property-details h1,
+.spacento-property-details h2,
+.spacento-property-details h3,
+.spacento-property-details h4,
+.spacento-property-details h5,
+.spacento-property-details h6{
+	margin: 0 0 2.0em 0;
+}
+.spacento-property-details p{
+	margin: 0 0 2.0em 0;
+}
+.spacento-property-features{
+	margin: 0 0 2.0em 0;
+}
+
+.spacento-property-features{
+	width: 100%;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: rgba(0,0,0,0.05);
+}
+.spacento-property-features p{
+	font-size: 1.2rem;
+	margin: 0;
+	overflow: auto;
+}
+.spacento-property-features p:nth-child(2n){
+	background: rgba(0,0,0,0.05);
+}
+.spacento-property-features p span{
+	font-size: 1.2rem;
+	width: 50%;
+	float: left;
+	padding: 0.5em 1.0em;
+}
+.spacento-property-features p span:nth-child(1){
+	background: rgba(0,0,0,0.03);
+}
+.spacento-property-contact{
+	margin: 0 !important;
+}
+.spacento-property-contact>span{
+	display: inline-block;
+	padding: 0.6em 3.0em;
+	color: rgba(0,0,0,1.00);
+	font-size: 2.0rem;
+	cursor: pointer;
+	background: rgba(255,255,255,1.00);
+}
+
+.spacento-property-contact-form{
+	width: 100%;
+	background: rgba(255,255,255,1.00);
+	padding: 2.0em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	display: none;
+}
+.spacento-property-contact-form p{
+	margin: 0 !important;
+	padding: 0 0 2.4em 0;
+	position: relative;
+}
+.spacento-property-contact-form .spacento-error{
+	position: absolute;
+	bottom: 1.4em;
+	left: 0;
+	font-size: 1.2rem;
+	color: rgba(203,51,54,1.00);
+	display: none;
+}
+.spacento-property-contact-form .spacento-submit{
+	-webkit-border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	border-radius: 1.2em;
+	background: rgba(0,0,0,1.00);
+	padding: 0.6em 3.0em;
+	font-size: 1.2rem;
+	color: rgba(255,255,255,1.00);
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.spacento-property-contact-form .spacento-submit-spinner{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 3;
+	background: rgba(0,0,0,1.00);
+	-webkit-border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	border-radius: 1.2em;
+	padding: 4px 0 0 0;
+}
+.spacento-property-contact-form .spacento-submit-spinner span{
+  	border: 4px solid #FFFFFF; /* Light grey */
+ 	border-top: 4px solid #007cba; /* Blue */
+  	border-radius: 50%;
+  	width: 20px;
+ 	height: 20px;
+  	animation: spacento-spinner-icon 2s linear infinite;
+	display: none;
+	margin: 0 0 0 0.5em;
+}
+@keyframes spacento-spinner-icon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spacento-submit-error-message{
+	display: none;
+	padding: 1.0em 2.0em;
+	border: 1px dotted rgba(181,61,63,1.00);
+	font-size: 1.0rem;
+	margin: 0 0 1.5em 0;
+}
+.spacento-submit-success-message{
+	display: none;
+	padding: 1.0em 2.0em;
+	border: 1px dotted rgba(42,42,42,1.00);
+	font-size: 1.0rem;
+	margin: 0 0 1.5em 0;
+}
+
+.spacento-widget-container{
+	width: 100%;
+	padding: 1.4em;
+	background: #e9e9e9;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+}
+.spacento-widget-property-one-item{
+	width: 100%;
+	overflow: auto;
+	background: #dfdfdf;
+	padding: 1.4em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0 0 2.0em 0;	
+}
+.spacento-widget-property-two-item{
+	width: 100%;
+	overflow: auto;
+	background: #dfdfdf;
+	padding: 1.4em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0 0 2.0em 0;	
+}
+.spacento-property-media{
+	width: 100%;
+	float: left;
+}
+.spacento-property-content{
+	width: 100%;
+	float: left;	
+}
+
+.spacento-property-price{
+	width: 100%;
+	margin: 2.0em 0;
+}
+.spacento-property-price p{
+	margin: 0.5em 0;
+	font-weight: bold;
+}
+.spacento-property-price span{
+	padding: 0 0.7em 0 0;
+	text-transform: uppercase;
+}
+
+/* styles for less than 400px */
+@media screen
+and (max-width : 399px) {
+
+
+
+}
+
+/* styles for 400px - 600px */
+@media screen
+and (min-width : 400px) 
+and (max-width : 599px) {
+	
+
+}
+
+/* styles for 600px - 900px */
+@media screen 
+and (min-width : 600px) 
+and (max-width : 900px) {
+
+
+
+}
+
+/* styles for 901px - 1200px */
+@media screen
+and (min-width : 901px) {
+	
+
+}
+
+
+
+@media screen
+and (min-width : 900px)
+and (max-width : 1200px) {
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1400px) {	
+
+
+}
+
+@media screen 
+and (min-width : 1201px)
+and (max-width : 1600px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1201px) {
+
+	.spacento-property-gallery{
+		width: 45%;
+		margin: 0;
+	}
+	
+	.spacento-property-details{
+		width: 45%;
+		margin: 0 0 0 10%;
+	}
+	
+	.spacento-widget-property-two-item .spacento-property-media{
+		width: 45%;
+		margin: 0 10% 0 0;
+	}
+	.spacento-widget-property-two-item .spacento-property-content{
+		width: 45%;
+	}	
+
+}
+
+
+
+@media screen 
+and (min-width : 1401px) {
+
+
+}
+
+
+
+@media screen 
+and (min-width : 1601px) {
+
+
+}
+
+@media screen 
+and (min-width : 2401px) {
+
+
+}
